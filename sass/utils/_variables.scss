@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;700&display=swap');
+
+// Text
+$darkBlue: hsl(238, 29%, 16%);
+$softRed: hsl(14, 88%, 65%);
+
+// Background gradient
+$softViolet: hsl(273, 75%, 66%);
+$violetShadow: #5944bd;
+$softBlue: hsl(240, 73%, 65%);
+$mainBg: linear-gradient($softViolet, $softBlue);
+
+// Divider
+$lightGray: hsl(240, 5%, 91%);
+$darkGray: hsl(240, 6%, 50%);
+
+$font-family: 'Kumbh Sans', sans-serif;
+$font-size: 10px;
+
+@mixin font($color: $darkBlue, $size: $font-size, $font-weight: 400) {
+    color: $color;
+    font-size: $size;
+    font-weight: $font-weight;
+    font-family: $font-family;
+}
