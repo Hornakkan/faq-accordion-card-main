@@ -89,6 +89,8 @@ body {
 }
 .element .question img {
   height: 7px;
+  transform: rotate(0deg);
+  transition: transform 0.5s ease-out;
 }
 .element .question img:hover {
   cursor: pointer;
@@ -110,6 +112,9 @@ body {
 }
 .element.active .question {
   font-weight: 700;
+}
+.element.active .question img {
+  transform: rotate(180deg);
 }
 .element.active .answer {
   height: 100px;
