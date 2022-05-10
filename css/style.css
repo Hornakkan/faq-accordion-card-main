@@ -29,13 +29,13 @@ body {
   width: 50%;
   background: url("../images/bg-pattern-desktop.svg") no-repeat;
   background-size: 210%;
-  background-position: 110% 65%;
+  background-position: -700px -370px;
 }
 .logo .box {
   position: absolute;
   width: 21%;
   left: -10%;
-  top: 58%;
+  top: 350px;
   transform: translateY(-50%);
   z-index: 1;
 }
@@ -146,6 +146,51 @@ footer p {
 .devicon-github-original {
   color: white;
   font-size: 35px;
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 200px auto;
+    width: 90%;
+  }
+
+  .logo {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background-size: 55%;
+    background-position: 85px -120px;
+  }
+  .logo .box {
+    position: absolute;
+    width: 24%;
+    left: 32%;
+    top: -45px;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  .logo .img-desktop {
+    position: absolute;
+    overflow: visible;
+    width: 50%;
+    top: -310px;
+    left: 58%;
+    transform: translateX(-50%);
+  }
+
+  .faq {
+    width: 100%;
+    min-height: 80%;
+    margin: 0;
+  }
+  .faq .title {
+    margin: auto;
+  }
+  .faq .element {
+    width: 85%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
